@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <div class="form">
+      <div class="form-horizontal" id="login_form"  align="center">
+        <h3 class="form-title">LOGIN</h3>
+        <div class="col-md-9">
+          <div class="form-group">
+            <i class="fa fa-user fa-lg"></i>
+            <input class="form-control required" type="text" placeholder="Username" id="username" name="username" autofocus="autofocus" maxlength="20"/>
+          </div>
+          <div class="form-group">
+            <i class="fa fa-lock fa-lg"></i>
+            <input class="form-control required" type="password" placeholder="Password" id="password" name="password" maxlength="8"/>
+          </div>
+          <div class="form-group">
+            <label class="checkbox">
+              <input type="checkbox" name="remember" value="1"/>记住我
+            </label>
+          </div>
+          <div class="form-group col-md-offset-9">
+            <button type="submit" class="btn btn-success pull-right" name="submit">登录</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script>
+      // You can also require other files to run in this process
+      //require('./renderer.js')
+      window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.min.js');
+      require('./node_modules/popper.js/dist/umd/popper.min.js');
+      require('./node_modules/bootstrap/dist/js/bootstrap.min.js');
+  </script>
+  </body>
+</html>
+
+
